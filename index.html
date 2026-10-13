@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Candle Games — Coming soon</title>
+  <meta name="description" content="Night Candle Games. Coming soon.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="Night Candle Games">
+  <meta property="og:description" content="Coming soon.">
+  <meta property="og:image" content="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0e17;
+      --cream: #ede6d6;
+      --amber: #e8a03c;
+      --muted: #8a8696;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: radial-gradient(ellipse at 50% 35%, #1c1820 0%, var(--bg) 60%);
+      background-color: var(--bg);
+      color: var(--cream);
+      font-family: "Inter", system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 32px 16px;
+      text-align: center;
+    }
+    img {
+      width: min(420px, 80vw);
+      height: auto;
+      animation: flicker 6s ease-in-out infinite;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--amber);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s;
+    }
+    a:hover, a:focus-visible { border-bottom-color: var(--amber); }
+    footer {
+      position: fixed;
+      bottom: 16px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    @keyframes flicker {
+      0%, 100% { filter: drop-shadow(0 0 18px rgba(232,160,60,.10)); }
+      50%      { filter: drop-shadow(0 0 30px rgba(232,160,60,.22)); }
+    }
+    @media (prefers-reduced-motion: reduce) { img { animation: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="logo.png" alt="Night Candle Games">
+    <h1>Coming soon</h1>
+    <a href="mailto:contact@nightcandlegames.com">contact@nightcandlegames.com</a>
+  </main>
+  <footer>© 2026 Night Candle Games</footer>
+</body>
+</html>
